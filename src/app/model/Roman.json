@@ -1,0 +1,30 @@
+[
+  {
+    "roman": "I",
+    "value": 1
+  },
+  {
+    "roman": "V",
+    "value": 5
+  },
+  {
+    "roman": "X",
+    "value": 10
+  },
+  {
+    "roman": "L",
+    "value": 50
+  },
+  {
+    "roman": "C",
+    "value": 100
+  },
+  {
+    "roman": "D",
+    "value": 500
+  },
+  {
+    "roman": "M",
+    "value": 1000
+  }
+]
