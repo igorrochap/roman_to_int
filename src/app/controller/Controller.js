@@ -19,8 +19,6 @@ class Controller {
             const romans = require('../model/Roman')
             const number = req.body.number.toUpperCase()
 
-            console.log(number)
-
             let integer = 0;
 
             for(let i = 0; i < number.length; i++){
@@ -48,16 +46,13 @@ class Controller {
                 } else {
                     if(number.length > 2){
                         let previous = this.toInt(romans, number[i - 1])
-                        console.log('previous -> ' + previous)
                         if(value >= previous){
-                            console.log('OP: ' + integer + ' + (' + value + ' - ' + previous + ')')
                             integer += value - previous
                         }
                     }
 
                 }
             }
-
 
             res.json({
                 "number" : integer
