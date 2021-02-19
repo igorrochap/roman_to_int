@@ -24,7 +24,6 @@ class Controller {
             for(let i = 0; i < number.length; i++){
                 let atualRoman = number[i]
 
-                console.log(atualRoman)
                 let value = this.toInt(romans, atualRoman)
                 let next = number[i + 1] ? this.toInt(romans, number[i + 1]) : 0
 
@@ -36,7 +35,6 @@ class Controller {
                 }
 
                 if(number[i + 1]){
-
                     if(value >= next){
                         integer += next
                     }
@@ -50,7 +48,6 @@ class Controller {
                             integer += value - previous
                         }
                     }
-
                 }
             }
 
